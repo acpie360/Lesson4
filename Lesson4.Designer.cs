@@ -35,11 +35,11 @@
             this.lblChooseOption = new System.Windows.Forms.Label();
             this.btnCalPrice = new System.Windows.Forms.Button();
             this.grpType = new System.Windows.Forms.GroupBox();
-            this.radPersonal = new System.Windows.Forms.RadioButton();
             this.radBusiness = new System.Windows.Forms.RadioButton();
+            this.radPersonal = new System.Windows.Forms.RadioButton();
             this.grpColor = new System.Windows.Forms.GroupBox();
-            this.radBlue = new System.Windows.Forms.RadioButton();
             this.radWhite = new System.Windows.Forms.RadioButton();
+            this.radBlue = new System.Windows.Forms.RadioButton();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.grpType.SuspendLayout();
@@ -52,7 +52,7 @@
             this.chkWindow.Checked = true;
             this.chkWindow.CheckState = System.Windows.Forms.CheckState.Indeterminate;
             this.chkWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkWindow.ForeColor = System.Drawing.Color.Blue;
+            this.chkWindow.ForeColor = System.Drawing.Color.Black;
             this.chkWindow.Location = new System.Drawing.Point(47, 134);
             this.chkWindow.Name = "chkWindow";
             this.chkWindow.Size = new System.Drawing.Size(151, 24);
@@ -66,7 +66,7 @@
             this.chkAir.Checked = true;
             this.chkAir.CheckState = System.Windows.Forms.CheckState.Indeterminate;
             this.chkAir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAir.ForeColor = System.Drawing.Color.Blue;
+            this.chkAir.ForeColor = System.Drawing.Color.Black;
             this.chkAir.Location = new System.Drawing.Point(47, 184);
             this.chkAir.Name = "chkAir";
             this.chkAir.Size = new System.Drawing.Size(149, 24);
@@ -80,7 +80,7 @@
             this.chkChrome.Checked = true;
             this.chkChrome.CheckState = System.Windows.Forms.CheckState.Indeterminate;
             this.chkChrome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkChrome.ForeColor = System.Drawing.Color.Blue;
+            this.chkChrome.ForeColor = System.Drawing.Color.Black;
             this.chkChrome.Location = new System.Drawing.Point(47, 227);
             this.chkChrome.Name = "chkChrome";
             this.chkChrome.Size = new System.Drawing.Size(90, 24);
@@ -102,7 +102,7 @@
             // 
             this.btnCalPrice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCalPrice.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCalPrice.Location = new System.Drawing.Point(47, 347);
             this.btnCalPrice.Name = "btnCalPrice";
             this.btnCalPrice.Size = new System.Drawing.Size(160, 60);
@@ -125,17 +125,6 @@
             this.grpType.TabStop = false;
             this.grpType.Text = "Account Type";
             // 
-            // radPersonal
-            // 
-            this.radPersonal.AutoSize = true;
-            this.radPersonal.Location = new System.Drawing.Point(7, 49);
-            this.radPersonal.Name = "radPersonal";
-            this.radPersonal.Size = new System.Drawing.Size(104, 24);
-            this.radPersonal.TabIndex = 0;
-            this.radPersonal.TabStop = true;
-            this.radPersonal.Text = "Personal";
-            this.radPersonal.UseVisualStyleBackColor = true;
-            // 
             // radBusiness
             // 
             this.radBusiness.AutoSize = true;
@@ -146,6 +135,17 @@
             this.radBusiness.TabStop = true;
             this.radBusiness.Text = "Business";
             this.radBusiness.UseVisualStyleBackColor = true;
+            // 
+            // radPersonal
+            // 
+            this.radPersonal.AutoSize = true;
+            this.radPersonal.Location = new System.Drawing.Point(7, 49);
+            this.radPersonal.Name = "radPersonal";
+            this.radPersonal.Size = new System.Drawing.Size(104, 24);
+            this.radPersonal.TabIndex = 0;
+            this.radPersonal.TabStop = true;
+            this.radPersonal.Text = "Personal";
+            this.radPersonal.UseVisualStyleBackColor = true;
             // 
             // grpColor
             // 
@@ -160,13 +160,28 @@
             this.grpColor.TabStop = false;
             this.grpColor.Text = "Color";
             // 
+            // radWhite
+            // 
+            this.radWhite.AutoSize = true;
+            this.radWhite.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.radWhite.FlatAppearance.BorderSize = 5;
+            this.radWhite.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.radWhite.ForeColor = System.Drawing.Color.Black;
+            this.radWhite.Location = new System.Drawing.Point(6, 89);
+            this.radWhite.Name = "radWhite";
+            this.radWhite.Size = new System.Drawing.Size(78, 24);
+            this.radWhite.TabIndex = 1;
+            this.radWhite.TabStop = true;
+            this.radWhite.Text = "White";
+            this.radWhite.UseVisualStyleBackColor = true;
+            // 
             // radBlue
             // 
             this.radBlue.AutoSize = true;
             this.radBlue.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.radBlue.FlatAppearance.BorderSize = 5;
-            this.radBlue.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
-            this.radBlue.ForeColor = System.Drawing.Color.Blue;
+            this.radBlue.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.radBlue.ForeColor = System.Drawing.Color.Black;
             this.radBlue.Location = new System.Drawing.Point(6, 37);
             this.radBlue.Name = "radBlue";
             this.radBlue.Size = new System.Drawing.Size(68, 24);
@@ -175,29 +190,13 @@
             this.radBlue.Text = "Blue";
             this.radBlue.UseVisualStyleBackColor = true;
             // 
-            // radWhite
-            // 
-            this.radWhite.AutoSize = true;
-            this.radWhite.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.radWhite.FlatAppearance.BorderSize = 5;
-            this.radWhite.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.radWhite.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.radWhite.ForeColor = System.Drawing.Color.White;
-            this.radWhite.Location = new System.Drawing.Point(6, 89);
-            this.radWhite.Name = "radWhite";
-            this.radWhite.Size = new System.Drawing.Size(77, 24);
-            this.radWhite.TabIndex = 1;
-            this.radWhite.TabStop = true;
-            this.radWhite.Text = "White";
-            this.radWhite.UseVisualStyleBackColor = true;
-            // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(116, 88);
+            this.txtName.Location = new System.Drawing.Point(127, 88);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(187, 26);
-            this.txtName.TabIndex = 8;
+            this.txtName.TabIndex = 0;
             this.txtName.Click += new System.EventHandler(this.txtName_Enter);
             this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
             // 
